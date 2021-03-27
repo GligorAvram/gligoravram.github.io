@@ -2861,14 +2861,6 @@ body.is-touch .poptrox-popup .closer {
   #header > .inner {
     margin-bottom: 0;
   }
-  /* Footer */
-  #footer .copyright li {
-    border-left-width: 0;
-    display: block;
-    line-height: 2.25em;
-    margin-left: 0;
-    padding-left: 0;
-  }
   /* Main */
   #main {
     margin-left: 30%;
@@ -2929,16 +2921,6 @@ body.is-touch .poptrox-popup .closer {
   }
   #footer .icons {
     margin: 0 0 1em 0;
-  }
-  #footer .copyright {
-    margin: 0 0 1em 0;
-  }
-  #footer .copyright li {
-    border-left-width: 1px;
-    display: inline-block;
-    line-height: 1em;
-    margin-left: 0.75em;
-    padding-left: 0.75em;
   }
   /* Main */
   #main {
@@ -3012,14 +2994,6 @@ body.is-touch .poptrox-popup .closer {
   }
   #header h1 br {
     display: none;
-  }
-  /* Footer */
-  #footer .copyright li {
-    border-left-width: 0;
-    display: block;
-    line-height: 2.25em;
-    margin-left: 0;
-    padding-left: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

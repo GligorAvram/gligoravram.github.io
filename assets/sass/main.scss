@@ -1533,20 +1533,6 @@ body.is-touch {
     }
   }
 
-  /* Footer */
-
-  #footer {
-    .copyright {
-      li {
-        border-left-width: 0;
-        display: block;
-        line-height: 2.25em;
-        margin-left: 0;
-        padding-left: 0;
-      }
-    }
-  }
-
   /* Main */
 
   #main {
@@ -1630,18 +1616,6 @@ body.is-touch {
 
     .icons {
       margin: 0 0 (_size(element-margin) * 0.5) 0;
-    }
-
-    .copyright {
-      margin: 0 0 (_size(element-margin) * 0.5) 0;
-
-      li {
-        border-left-width: 1px;
-        display: inline-block;
-        line-height: 1em;
-        margin-left: 0.75em;
-        padding-left: 0.75em;
-      }
     }
   }
 
@@ -1759,20 +1733,6 @@ body.is-touch {
     h1 {
       br {
         display: none;
-      }
-    }
-  }
-
-  /* Footer */
-
-  #footer {
-    .copyright {
-      li {
-        border-left-width: 0;
-        display: block;
-        line-height: 2.25em;
-        margin-left: 0;
-        padding-left: 0;
       }
     }
   }
