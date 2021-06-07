@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* various general purpose classes */
+.hide * {
+  display: none;
+}
+.space-around {
+  display: flex;
+  justify-content: space-around;
+}
+.hidden {
+  opacity: 0;
+}
+.fade-in {
+  transition: opacity 2s ease;
+}
+
+/* landing section */
+.main-content {
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-flow: column;
+  scroll-behavior: smooth;
+}
+
+.header-navbar {
+  position: absolute;
+  top: 1rem;
+  margin: 0 1rem;
+  width: 100%;
+}
+.main-picture {
+  position: absolute;
+  background: url("../pictures/background.jpg") no-repeat right bottom;
+  background-position: right;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85vh;
+  z-index: -1;
+  background-size: cover;
+}
+
+.landing-section {
+  position: static;
+  margin-top: 50vh;
+}
+.about-preface * {
+  margin: 0 2rem;
+  padding: 0.5rem 0;
+}
+.projects-section {
+  position: relative;
+}
+
+/* projects section */
+.projects-section * {
+  margin: 0 2rem;
+  padding: 0.5rem 0;
+}
+
+.projects-carousel {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background: chartreuse;
+  height: 15rem;
+  margin-bottom: 2rem;
+  width: 60%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* transition: 0.3s; */
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.699);
+}
+
+/* Add some padding inside the card container */
+.project-info {
+  padding: 2px 16px;
+}
