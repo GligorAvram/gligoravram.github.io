@@ -1,65 +1,122 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>My Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gligor's Portfolio Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap"
+    rel="stylesheet">
+</head>
+<body>  
+  <header>
+    <div class="logo">
+      <img src="/assets old/images/logo.png" alt="">
+    </div>
+    <button class="nav-toggle" aria="toggle navigation">
+      <div class="hamburger"></div>
+    </button>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__link"><a href="#home">Home</a></li>
+        <li class="nav__link"><a href="#services">My Services</a></li>
+        <li class="nav__link"><a href="#about">About me</a></li>
+        <li class="nav__link"><a href="#work">My work</a></li>
+      </ul>
+    </nav>
+  </header>
 
-		<div class="main-content">
-			<div class="landing-section">
-				<div class="header-navbar space-around">				
-					<div class="menu">menu</div>
-					<div class="home">home</div>		
-				</div>
-				<div class="about-preface">
-					<h3 id="name">Gligor Avram</h3>
-					<h1 id="my-description">Java Enthusiast, invent some better description to go by</h1>
-					<p id="my-intro">
-						I've learned java and have been using it for 4 years on various projects, a few of which I'll be showcasing it on this page. also, Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dignissimos minus quae, fugiat nesciunt maxime. Quas iusto at deleniti? Sit, maiores possimus nemo consequuntur ex, harum in minima id sint sunt, sapiente quisquam qui nihil. Deserunt cumque neque expedita! Dolore non voluptatum numquam debitis? Dignissimos aut harum ullam! Perspiciatis, earum.
-					</p>
-					<div class="space-around hide">
-						<button>view projects</button>
-						<button>contact me</button>
-					</div>
-				</div>
-				<div class="main-picture"></div>
-			</div>
+  <!-- introduction -->
+  <section class="intro" id="home">
+    <h1 class="section__title section__title--intro">
+      Hi, I am <strong>Gligor Avram</strong>
+    </h1>
+    <p class="section_subtitle section__subtitle--intro">
+      Something something
+    </p>
+    <img src="img/logo.png" alt="A picture of me" class="intro__img">
+  </section>
 
-			<div class="projects-section">
-				<h2 class="hidden fade-in">A showcase of things I built</h2>
-				<div class="projects-carousel">
-					<div class="card hidden fade-in">
-						<img src="" alt="example project">
-						<div class="project-info">
-							<h4>project title</h4>
-							<p>Project description</p>
-						</div>
-					</div>
-					<div class="card hidden fade-in">
-						<img src="" alt="example project2">
-					</div>
-				</div>				
-			</div>
+  <!-- My services -->
+  <section class="my-services" id="services">
+    <h2 class="section__title section__title--services">What I do</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Design and Development</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam quibusdam, optio asperiores dolore, quaerat accusantium perspiciatis praesentium aspernatur incidunt et sint facilis consequatur sapiente, eaque laudantium soluta! Ipsam quod nobis officiis nam, voluptatibus molestiae id a itaque deserunt, blanditiis quos. Adipisci nobis velit praesentium, cupiditate perferendis molestiae quae voluptatem harum.</p>
+      </div><!-- close service -->
+      <div class="service">
+        <h3>E-Commerce</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, id nulla fugiat doloribus deleniti reiciendis vel hic eveniet temporibus veritatis ea tempora delectus quibusdam expedita porro voluptas labore aliquam qui, dolore, officia ex illo quam neque consequuntur? Possimus officia eos doloribus molestiae sequi tenetur repudiandae, rerum, ducimus quis ab deserunt.</p>
+      </div><!-- close service -->
+      <div class="service">
+        <h3>WordPress</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus culpa quidem debitis ad sed! Eaque quaerat, optio quo aut et tenetur porro animi excepturi explicabo impedit necessitatibus. Velit soluta nulla facere esse alias, architecto ea eaque expedita doloremque, saepe nostrum necessitatibus harum amet distinctio et error dolorem debitis ex iste.</p>
+      </div><!-- close service -->
+    </div>  <!-- close services -->
+    <a href="#work" class="btn">My Work</a>
+  </section>
 
-			<div class="profiles-section">
-				<h2 class="section hidden">Pages I use or contribute to (find a better name)</h2>
-				<div class="profiles-carousel">
-					<div class="section hidden">
-					
-					</div>
-				</div>
-			</div>
-		</div>
+  <!-- about me -->
+  <section class="about-me" id="about"> 
+    <h2 class="section__title section__title--about">Who I am</h2>
+    <p class="section__subtitle section__subtitle--about">HI, I'm Greg</p>
+    <div class="about-me__body">
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus doloribus, enim est iste consequuntur dolor earum natus reprehenderit voluptatum, aliquam animi? Iusto itaque dolorum consequatur hic obcaecati adipisci cumque explicabo. Expedita itaque ea dolore facilis, ratione laborum libero quibusdam iste quam ex consequatur consectetur, a reprehenderit, corporis cum. Eos, quod.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate libero laudantium placeat culpa voluptas totam! Doloribus odit velit sint debitis facere sequi in corporis, consequatur inventore repellendus rem, cum ipsum? Quam aspernatur voluptates placeat velit vitae. Voluptate culpa velit nobis hic distinctio consequuntur at repellendus quasi eum quis. Repellat, culpa!</p>
+    </div>
 
-		<div class="footer">
-			footer
-		</div>
-		
+    <img src="img/logo.png" alt="A picture of me" class="about-me__img">
+  </section>
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
-		<script src="/assets/js/script.js"></script>
-	</body>
+  <!-- my work -->
+  <section class="my-work" id="work">
+    <h2 class="section__title">My Work</h2>
+    <p class="section__subtitle">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde vitae harum nemo debitis distinctio voluptatibus architecto ea. Molestias, unde blanditiis dolor voluptas sequi distinctio qui quo magni ratione quasi dicta architecto ullam ipsa fuga nulla ea asperiores natus inventore aspernatur amet sint. Voluptate magnam animi laudantium sit officia earum consequuntur.
+    </p >
+
+    <div class="portfolio">
+      <!-- portfolio item 1 -->
+      <a href="portfolio-item-template.html" class="portfolio__item">
+        <img src="img/logo.png" alt="an image for the portfolio item" class=portfolio__img>
+      </a>
+      <!-- portfolio item 2 -->
+      <a href="portfolio-item-template.html" class="portfolio__item">
+        <img src="img/logo.png" alt="an image for the portfolio item" class=portfolio__img>
+      </a>
+      <!-- portfolio item 3 -->
+      <a href="portfolio-item-template.html" class="portfolio__item">
+        <img src="img/logo.png" alt="an image for the portfolio item" class=portfolio__img>
+      </a>
+      <!-- portfolio item 4 -->
+      <a href="portfolio-item-template.html" class="portfolio__item">
+        <img src="img/logo.png" alt="an image for the portfolio item" class=portfolio__img>
+      </a>
+      <!-- portfolio item 5 -->
+      <a href="portfolio-item-template.html" class="portfolio__item">
+        <img src="img/logo.png" alt="an image for the portfolio item" class=portfolio__img>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- footer -->
+  <footer class="footer">
+    <a href="mailto:avram.gligor@gmail.com" class="footer__link">avram.gligor@gmail.com</a>
+    <ul class="social-list">
+      <li class="social-list__item"><a href="" class="social-list__link"><i class="fab fa-github"></i></a></li>
+      <li class="social-list__item"><a href="" class="social-list__link"><i class="fab fa-facebook-square"></i></a></li>
+      <li class="social-list__item"><a href="" class="social-list__link"><i class="fab fa-linkedin"></i></a></li>
+    </ul>
+  </footer>
+
+
+  <script src="js/index.js"></script>
+</body>
 </html>
