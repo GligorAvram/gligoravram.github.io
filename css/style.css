@@ -286,23 +286,23 @@ header {
   }
 }
 
-/* my services section */
+/* my techs section */
 
-.my-services {
+.my-techs {
   background-color: var(--clr-dark);
-  background-image: url("../img/logo.png");
+  background-image: url("../img/code.jpg");
   background-blend-mode: multiply;
   background-size: cover;
   color: var(--clr-light);
   text-align: center;
 }
 
-.section__title--services {
+.section__title--techs {
   color: var(--clr-accent);
   position: relative;
 }
 
-.section__title--services::after {
+.section__title--techs::after {
   content: "";
   display: block;
   width: 2em;
@@ -312,24 +312,24 @@ header {
   opacity: 0.25;
 }
 
-.services {
+.techs {
   margin-bottom: 4em;
 }
 
-.service {
+.tech {
   max-width: 500px;
   margin: 0 auto;
 }
 
 @media (min-width: 800px) {
-  .services {
+  .techs {
     display: flex;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .service + .service {
+  .tech + .tech {
     margin-left: 2em;
   }
 }
@@ -372,6 +372,7 @@ header {
     grid-area: img;
     position: relative;
     z-index: 2;
+    max-width: 150%;
   }
 }
 
@@ -452,7 +453,23 @@ social-list__link:hover {
 
 /* individual portfolio item styles */
 
-.portfolio-item-individual {
+.portfolio-item-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-item-link .social-list {
+  margin: 0;
+}
+
+.portfolio-item-link a {
+  font-size: 5em;
+  line-height: 0;
+}
+
+.portfolio-item-link .portfolio-item-individual {
   padding: 0 2em 2em;
   max-width: 1000px;
   margin: 0 auto;
@@ -462,4 +479,8 @@ social-list__link:hover {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.portfolio-item-individual img {
+  margin: auto;
 }
