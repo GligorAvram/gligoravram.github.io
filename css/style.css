@@ -467,6 +467,8 @@ social-list__link:hover {
 .portfolio-item-link a {
   font-size: 5em;
   line-height: 0;
+  padding: 0;
+  color: var(--clr-accent);
 }
 
 .portfolio-item-link .portfolio-item-individual {
