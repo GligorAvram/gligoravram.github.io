@@ -1,86 +1,122 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>My Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!-- <link rel="stylesheet" href="assets/sass/main.css" /> -->
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gligor's Portfolio Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap"
+    rel="stylesheet">
+</head>
+<body>  
+  <header>
+    <div class="logo">
+      <img src="img/signature.png" alt="">
+    </div>
+    <button class="nav-toggle" aria="toggle navigation">
+      <div class="hamburger"></div>
+    </button>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__link"><a href="#home">Home</a></li>
+        <li class="nav__link"><a href="#techs">My Services</a></li>
+        <li class="nav__link"><a href="#about">About me</a></li>
+        <li class="nav__link"><a href="#work">My work</a></li>
+      </ul>
+    </nav>
+  </header>
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<img class = "image avatar"src="images/avatar.jpg" alt="" />
-					<h1><strong>Hi, I'm Gligor!</strong><br />
-					This is my portfolio page, hope you like what you see!</h1>
-				</div>
-			</header>
+  <!-- introduction -->
+  <section class="intro" id="home">
+    <h1 class="section__title section__title--intro">
+      Hi, I am <strong>Gligor Avram</strong>
+    </h1>
+    <p class="section_subtitle section__subtitle--intro">
+      Passionate Java developer
+    </p>
+    <img src="img/profile.jpg" alt="A picture of me" class="intro__img">
+  </section>
 
-		<!-- Main -->
-			<div id="main">
+  <!-- My services -->
+  <section class="my-techs" id="techs">
+    <h2 class="section__title section__title--techs">Main technologies I work with</h2>
+    <div class="techs">
+      <div class="tech">
+        <h3>Java</h3>
+        <p>My go to language when it comes to programming. I like that it's very friendly, type-safe and has a plenthora of API you can work with (among other things). Also, its "Write once, run everywhere" approach is a time saver for running applications both on Windows, Linux and Mac OS X.</p>
+      </div><!-- close service -->
+      <div class="tech">
+        <h3>Spring</h3>
+        <p>The Spring framework automates and simplifies a large part of the tedious aspects of making an application, allowing me to concentrate on the unique aspects of the application I'm developing. I highly recommend it for anybody who wants to make WebApps.</p>
+      </div><!-- close service -->
+      <div class="tech">
+        <h3>Javascript, HTML, CSS</h3>
+        <p>The indispensable trio of web programming. Even though my visual design skills are not as good as I'd like them to be, CSS and especially Javascript allow enriching the visual aesthetics and user functionality of the applications I'm building.</p>
+      </div><!-- close service -->
+    </div>  <!-- close services -->
+    <a href="#work" class="btn">My Work</a>
+  </section>
 
-				<!-- One -->
-					<section id="one">
-						<header class="major">
-							<h2>About me</h2>
-						</header>
-						<p>My name is Gligor Avram, and I'm a passionate programmer looking to breakthrough in the software development industry. I'm always trying to learn new things, new technologies and new skills and always trying to improve myself. </p>
-						<p>If you want to contact me you can email me at avram.gligor@gmail.com</p>
-					</section>
+  <!-- about me -->
+  <section class="about-me" id="about"> 
+    <h2 class="section__title section__title--about">Who I am</h2>
+    <p class="section__subtitle section__subtitle--about">“You don’t understand anything until you learn it more than one way.” – Marvin Minsky</p>
+    <div class="about-me__body">
+      <p>I've always been passionate about computers and technology, with computers playing a huge part in my formation during my teen years and beyond. As an aduly my livelyhood has revolved around computer technology in one way or another, whether it be internet connectivity troubleshooting, software debugging, DNS and email system management etc.</p>
+      <p>Although I enjoy my work, I would like to transition to software creation from this point on. I always liked learning how things are built, how they work and how they interact with each other, but looking at things from the users perspective is becoming more and more of a detriment to my growth. I also like that the development field is always changing, always evolving, giving me clear motivation to become better at what I do.</p>
+    </div>
 
-				<!-- Two -->
-					<section id="two">
-						<h2>My projects</h2>
-						<div class="row">
+    <img src="img/office.png" alt="A picture of me" class="about-me__img">
+  </section>
 
-						<article class="col-6 col-12-xsmall work-item">
-								<a href="https://github.com/GligorAvram/CurrencyConverter" class="image fit thumb"><img src="images/thumbs/Money.jpg" alt="" /></a>
-								<h3>Currency Converter</h3>
-								<p>A small currency converter program that uses an API to get the current exchange rate for various currencies</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://github.com/GligorAvram/bar" class="image fit thumb"><img src="images/thumbs/cocktail.jpg" alt="" /></a>
-								<h3>Cocktail finder</h3>
-								<p>A program I made meant to find cocktail recipes. I made it to learn how to work with JSONs that came back from APIs. I ended up dropping it when I realised it had 500 ingredients and 600 recipes and no good way to group similar ingredients.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://github.com/GligorAvram/Excel" class="image fit thumb"><img src="images/thumbs/excel.jpg" alt="" /></a>
-								<h3>Excel parser</h3>
-								<p>A simple program I made for work meant to parse Excel files and automate domain grading</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://github.com/GligorAvram/MyTripsRepo" class="image fit thumb"><img src="images/thumbs/sidi.jpg" alt="" /></a>
-								<h3>Trip indexer</h3>
-								<p>The final project for "Scoala informala de IT".</p>
-							</article>
-							</div>
-						</div>
-						<ul class="actions">
-							<li><a href="https://github.com/GligorAvram?tab=repositories" class="button">Full Portfolio</a></li>
-						</ul>
-					</section>
-			</div>
+  <!-- my work -->
+  <section class="my-work" id="work">
+    <h2 class="section__title">My Projects</h2>
+    <p class="section__subtitle">
+      This is a small showcase of the programs I built. I hope you like what you see. If you have any questions about any of them, don't hesitate to contact me (email address below).
+    </p >
 
-		<!-- Footer -->
-			<footer id="footer">
-				<!-- <div class="inner"> -->
-					<div class="static">
-					<ul class="icons">
-						<li><a href="https://github.com/GligorAvram" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="https://www.linkedin.com/in/gligor-avram/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="mailto:avram.gligor@gmail.com?subject=Mail from Portfolio page" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-				</div>
-			</footer>
+    <div class="portfolio">
+      <!-- portfolio item 1 -->
+      <a href="manabi.html" class="portfolio__item">
+        <img src="img/logo.png" alt="an image for the portfolio item" class=portfolio__img>
+      </a>
+      <!-- portfolio item 2 -->
+      <a href="sidi.html" class="portfolio__item">
+        <img src="img/sidi.jpg" alt="an image for the portfolio item" class=portfolio__img>
+      </a>
+      <!-- portfolio item 3 -->
+      <a href="cocktail.html" class="portfolio__item">
+        <img src="img/cocktail.jpg" alt="an image for the portfolio item" class=portfolio__img>
+      </a>
+      <!-- portfolio item 4 -->
+      <a href="exchange.html" class="portfolio__item">
+        <img src="img/money.png" alt="an image for the portfolio item" class=portfolio__img>
+      </a>
+      <!-- portfolio item 5 -->
+      <a href="excel.html" class="portfolio__item">
+        <img src="img/excel.jpg" alt="an image for the portfolio item" class=portfolio__img>
+      </a>
+    </div>
+  </section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
 
-	</body>
+  <!-- footer -->
+  <footer class="footer">
+    <a href="mailto:avram.gligor@gmail.com" class="footer__link">avram.gligor@gmail.com</a>
+    <ul class="social-list">
+      <li class="social-list__item"><a href="https://github.com/GligorAvram" class="social-list__link"><i class="fab fa-github"></i></a></li>
+      <li class="social-list__item"><a href="https://www.linkedin.com/in/gligor-avram/" class="social-list__link"><i class="fab fa-linkedin"></i></a></li>
+      <li class="social-list__item"><a href="https://www.facebook.com/avram.gligor/" class="social-list__link"><i class="fab fa-facebook-square"></i></a></li>      
+    </ul>
+  </footer>
+
+
+  <script src="js/index.js"></script>
+</body>
 </html>
