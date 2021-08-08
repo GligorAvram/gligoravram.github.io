@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gligor's Portfolio Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap"
+    rel="stylesheet">
+</head>
+<body>  
+  <header>
+    <div class="logo">
+      <img src="/img/signature.png" alt="signature">
+    </div>
+    <button class="nav-toggle" aria="toggle navigation">
+      <div class="hamburger"></div>
+    </button>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__link"><a href="index.html#home">Home</a></li>
+        <li class="nav__link"><a href="index.html#services">My Services</a></li>
+        <li class="nav__link"><a href="index.html#about">About me</a></li>
+        <li class="nav__link"><a href="index.html#work">My work</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- introduction -->
+  <section class="intro">
+    <h1 class="section__title section__title--intro">
+      The <strong>DNS report</strong> maker
+    </h1>
+    <p class="section_subtitle section__subtitle--intro">
+      An easy way to get the DNS information you need to configure your email system
+    </p>
+    <img src="img/dns.jpg" alt="a picture for the project" class="intro__img">
+  </section>
+
+  <div class="portfolio-item-link">
+    <p>Click the icon below to visit the repository of this program</p>    
+      <ul class="social-list">
+      <li class="social-list__item"><a href="https://github.com/GligorAvram/DNS-Report-Maker" class="social-list__link"><i class="fab fa-github"></i></a></li>
+    </ul>  
+  </div>
+
+  <div class="portfolio-item-individual">
+    <p>An application that will get the MX, DMARC, DKIM and SPF records of a domain. It will also dive deep into the SPF record to break it down into all of its lookups and IPs</p>
+    <img src="img/dnsreportmaker.jpg" alt="img details">
+    <p>I built this application for work because one of our competitors has a similar feature, although IMO broken, and in order to simplify the initial information gathering phase of a project</p>
+    <p>The program uses the DNSJava DNS querying library in order to make the DNS lookups. The most chalenging part of making this project was breaking down the SPF. I used a custom made tree with a variable number of children per branch that also needs to keep track of the non-lookup information at the same level. Traversing it was done using a depth first pre-order traversal.</p>
+  </div>
+
+
+  <!-- footer -->
+  <footer class="footer">
+    <a href="mailto:avram.gligor@gmail.com" class="footer__link">avram.gligor@gmail.com</a>
+    <ul class="social-list">
+      <li class="social-list__item"><a href="" class="social-list__link"><i class="fab fa-github"></i></a></li>
+      <li class="social-list__item"><a href="" class="social-list__link"><i class="fab fa-facebook-square"></i></a></li>
+      <li class="social-list__item"><a href="" class="social-list__link"><i class="fab fa-linkedin"></i></a></li>
+    </ul>
+  </footer>
+
+
+  <script src="js/index.js"></script>
+</body>
+</html>
